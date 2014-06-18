@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vf"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="viewFlow的勇敢尝试" />
+    <org.taptwo.android.widget.LayersLayout
+        android:id="@+id/layerslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <!-- 下拉刷新 -->
+
+        <org.taptwo.android.widget.PullToRefreshListView
+            android:id="@+id/pulltorefreshlistview"
+            style="@style/ListViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="0dip"
+            android:fastScrollEnabled="true"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+        </org.taptwo.android.widget.PullToRefreshListView>
+
+    </org.taptwo.android.widget.LayersLayout>
+
+</LinearLayout>
